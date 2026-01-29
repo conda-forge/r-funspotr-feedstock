@@ -1,4 +1,4 @@
-{% set version = '0.0.4' %}
+{% set version = "0.0.5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/funspotr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/funspotr/funspotr_{{ version }}.tar.gz
-  sha256: 02562e7bb828dac2cfb3750af7fcaa101b3a4b06d9af2c86b2d7b6b0e73c8358
+  sha256: de45e43b1bc1e4820e8dcd8891e0b4ff18c35d73887b41afad3f96a586a2fc1c
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
